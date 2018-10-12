@@ -1,0 +1,160 @@
+.system_permission{
+    width: 100%;
+    height: 100%;
+    header{
+        height: 36px;
+        padding:17px 22px 17px 19px;
+        border: 1px solid #EFEFEF;
+        font-size: 12px;
+        .header_left{
+            float: left;
+            .el-input{
+                width: 120px;
+                height: 36px;
+                margin-left: 10px;
+            }
+        }
+        
+    }
+    .permission_table{
+        width: 100%;
+        border-left: 1px solid #EFEFEF;
+        border-right: 1px solid #EFEFEF;
+        table{
+            width: 100%;
+            font-size: 14px;
+            tr{
+                border-bottom: 1px solid #EFEFEF;
+                // padding-left: 20px;
+                th{
+                    height: 46px;
+                    vertical-align: middle;
+                    color: #fff;
+                    background: #92A6B1;
+                }
+            }
+            td{
+                height: 36px;
+                vertical-align: middle;
+            }
+            .active{
+                background: #F6F6F6;    
+            }
+            
+        }
+        .table_tips{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-bottom: 1px solid #EFEFEF;
+            font-size: 14px;
+            color: #333;
+        }
+    }
+    .paging{
+        text-align: center;
+        margin-top: 15px;
+        padding-bottom: 37px;
+    }
+    .el-message-box__header{
+        border-bottom:  1px solid #EFEFEF ;
+    }
+    .el-dialog__body{
+        p{
+            margin-bottom: 20px;
+        }
+        .el-checkbox-group{
+            width: 100%;
+            .label{
+                width: 100%;
+                height: 20px;
+                background: #F5F6FA;
+                line-height: 40px;
+                border-bottom: 1px dashed  #A6B7BF;
+            }
+            .el-checkbox{
+                width: 28%;
+                margin-left: 5%;
+            }
+        }
+    }
+    .el-message-box__content{
+        
+        height: 38px;
+        vertical-align: middle;
+        overflow: hidden;
+        padding: 29px 18.5% 31px 18.5%;
+        .el-message-box__message{
+            float: left;
+            p{
+                line-height: 38px;
+                margin-right: 8px;
+            }
+        }
+        .el-message-box__input{
+            float: left;
+            width: 200px;
+            height: 38px;
+            padding: 0;
+        }
+    }
+    .el-message-box__btns{
+        text-align: center;
+    }
+    .addRole{
+        .el-form-item__content,.el-select{
+            width: 200px;
+        }
+    }
+}
+// .el-message-box__header{
+//     border-bottom:  1px solid #EFEFEF ;
+// }
+// .el-dialog__body{
+//     p{
+//         margin-bottom: 20px;
+//     }
+//     .el-checkbox-group{
+//         width: 100%;
+//         .label{
+//             width: 100%;
+//             height: 20px;
+//             background: #F5F6FA;
+//             line-height: 40px;
+//             border-bottom: 1px dashed  #A6B7BF;
+//         }
+//         .el-checkbox{
+//             width: 28%;
+//             margin-left: 5%;
+//         }
+//     }
+// }
+// .el-message-box__content{
+    
+//     height: 38px;
+//     vertical-align: middle;
+//     overflow: hidden;
+//     padding: 29px 18.5% 31px 18.5%;
+//     .el-message-box__message{
+//         float: left;
+//         p{
+//             line-height: 38px;
+//             margin-right: 8px;
+//         }
+//     }
+//     .el-message-box__input{
+//         float: left;
+//         width: 200px;
+//         height: 38px;
+//         padding: 0;
+//     }
+// }
+// .el-message-box__btns{
+//     text-align: center;
+// }
+// .addRole{
+//     .el-form-item__content,.el-select{
+//         width: 200px;
+//     }
+// }

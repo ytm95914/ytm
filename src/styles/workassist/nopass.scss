@@ -1,0 +1,45 @@
+.nopass{
+    border: 1px solid #E9F1F3;
+    header{
+        padding:17px 20px 15px 20px;
+        font-size: 14px;
+        color: #333;
+        span{
+            margin-right: 10px;
+        }
+        .el-select{
+            width: 188px;
+            height: 38px;
+            margin-right: 21px;
+        }
+        .el-input{
+            width: 188px;
+            height: 38px;
+        }
+        .add{
+            background: #4A90E2;
+        }
+        .search{
+            background: #11A0F8;
+        }
+    }
+    .el-input__inner,.el-textarea{
+        width: 188px;
+    }
+    table{
+        width: 100%;
+        font-size: 13px;
+        .title{
+            background:#92A6B1;
+            color: #fff;
+            height: 48px;
+        }
+        tr{
+            color: #333;
+            height: 36px;
+        }
+        .active{
+            background: #F6F6F6;    
+        }
+    }
+}

@@ -1,0 +1,215 @@
+.arrange{
+    width: 100%;
+    height: 100%;
+    h3{
+        line-height: 50px;
+        padding-left: 20px;
+        border: 1px solid #E9F1F3;
+    }
+    .employee_infor_box{
+        height: 50px;
+        line-height: 50px;
+        border-left: 1px solid #E9F1F3;
+        border-right: 1px solid #E9F1F3;
+        padding:0 20px;
+        .employee_infor{
+            float: left;
+            li{
+                float: left;
+                font-size: 12px;
+                color: #333;
+                margin-right: 29px;
+                span{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .employee_infor_left{
+            float: right;
+            height: 50px;
+            label{
+                font-size: 12px;
+                vertical-align: middle;
+                input{
+                    width: 15px;
+                    height: 15px;
+                   vertical-align: middle;
+                }
+                // vertical-align: middle;
+            }
+            #button{
+                margin-top: 8.5px;
+            }
+        }
+        
+    }
+    .el-dialog{
+        width: 500px;
+        height: 320px;
+        .el-dialog__header{
+            border-bottom: 1px solid #EFEFEF;
+        }
+        .el-dialog__body{
+            height: 38px;
+            padding:37px 0 97px 0;
+            text-align: center;
+            .select_box{
+                display: inline-block;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .el-form{
+                width: 270px;
+                margin: 0 auto;
+            }
+            
+        }
+        .dialog-footer{
+            text-align: center;
+            button{
+                width: 88px;
+                height: 36px;  
+                color: #fff; 
+            }
+        }
+    }
+    #calendar {
+        width: 100%;
+        border: 1px solid #E9F1F3;
+        .month {
+            height: 50px;
+            background: #92A6B1;
+            div {
+                // width: 217px;
+                margin: 0 auto;
+                line-height: 50px;
+                overflow: hidden;
+                text-align: center;
+                .arrow{
+                    cursor: pointer;
+                }
+                span{
+                    color: #fff;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                }
+                .year-month {
+                    margin: 0 32px;
+                    cursor:default;
+                    .choose-year {
+                        // padding: 0 20px;
+                        font-size: 16px;
+                        font-weight: 200;
+                    }
+                    .choose-month {
+                        text-align: center;
+                        font-size: 16px;
+                        font-weight: 200;
+                    }
+                }
+            }
+ 
+        }
+        .weekdays {
+            margin: 0;
+            color: #FFFFFF;
+            background: #F2F7F8;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            display: flex;
+            li {
+                float: left;
+                text-align: center;
+                color: #11616f;
+                font-size: 14px;
+                font-weight: 100;
+                width: 14.28%;
+                border-right: 1px solid #fff;
+                &:last-child{
+                    border:1px solid #E9F1F3;
+                }
+            }
+        }
+ 
+        .days {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                float: left;
+                width: 14.28%;
+                height: 100px;
+                text-align: left;
+                font-size: 12.78px;
+                font-weight: 200;
+                outline: 0.5px solid #E9F1F3;
+                position: relative;
+                
+                span{
+                    display: inline-block;
+                    width: 38px;
+                    height: 25px;
+                    text-align: center;
+                    line-height: 25px;
+                    color: #333;
+                    
+                }
+                p{
+                    font-size: 12px;
+                    color: #666;
+                    // display: inline-block;
+                    // width: 100%;
+                    // height: 100%;
+                    padding: 31% 14px 10px;
+                    // text-align: center;
+                    margin: 0 auto;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+                .other-month {
+                    color: #333;
+                    background: #F6F6F6;
+                }
+                .checkbox{
+                    width: 15px;
+                    height: 15px;
+                    float: right;
+                    position: absolute;
+                    right: 0;
+                }
+            }
+            .active{
+                background:#f2faff;
+            }
+            .other-month {
+                color: #333;
+                background: #F6F6F6;
+            }
+ 
+        }
+    }
+    .scheduling{
+        p{
+            line-height: 50px;
+            color: #333;
+            font-size: 16px;
+        }
+        .schedulingTable{
+            border: 1px solid #ccc;
+            tr{
+                line-height: 40px;
+                td{
+                    padding:0 10px;
+                    text-align: center !important;
+                    vertical-align: middle;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}

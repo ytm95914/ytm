@@ -1,0 +1,204 @@
+.schedulingmanage{
+    .header{
+        // width: 100%;
+        height: 35px;
+        padding:0 20px 20px 0;
+        border-bottom: 2px solid #E9F1F3;
+    }
+    .dialogBox{
+        border: 1px solid #E9F1F3;
+        padding:25px 30px 0 30px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 366px;
+        width: 100%;
+    }
+    .choice{
+        height: 36px;
+        padding:22px 22px 26px 20px;
+        .choice_left{
+            float: left;
+            i{
+                font-size: 12px;
+                color: #333333;
+            }
+            .el-button{
+                background:#F2F7F8;
+                width:70px;
+            }
+            .span_active{
+                background: #11A0F8;
+                color: #fff;
+            }
+        }
+        .choice_right{
+            width: 140px;
+            float: right;
+            .block{
+                width: 100%;
+                height: 100%;
+                .el-date-editor.el-input, .el-date-editor.el-input__inner{
+                    width: 100% !important;
+                    height: 100% !important;
+                }
+            }
+        }
+    }
+    .statistics{
+        padding: 0 19px 0 20px;
+        overflow: hidden;
+        .statistics_top{
+            margin-bottom: 20px;
+            overflow: hidden;
+            .statistics_top_left{
+                width: 26.5%;
+                height: 366px;
+                border: 1px solid #E9F1F3;
+                float: left;
+                .statistics_title{
+                    line-height: 50px;
+                    padding-left: 20px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    border-bottom: 1px solid #E9F1F3;
+                }
+                .details{
+                    padding:30px 0 0 19px;
+                    li{
+                        line-height: 30px;
+                        span:nth-of-type(1){
+                            color: #666666;
+                            font-size: 14px;
+                        }
+                        span:nth-of-type(2){
+                            color: #11A0F8;
+                            font-size: 24px;
+                            margin-left: 11px;
+                        }
+                        span:nth-of-type(3){
+                            color: #11A0F8;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .statistics_top_right{
+                float: right;
+                // margin-left: 2%;
+                width: 71%;
+                height: 366px;
+                padding:0 20px 20px 30px;
+                border: 1px solid #E9F1F3;
+                box-sizing: border-box;
+                .charts_title{
+//                  padding:30px 20px 20px 30px;
+                    font-size: 12px;
+                    overflow: hidden;
+                    height: 50px;
+                    line-height: 50px;
+                    span{
+                        float: left;
+                    }
+                    .explains{
+                        float: right;
+                        span{
+                            margin-left: 12px;
+                        }
+                        .human:before{
+                            content:"";
+                            display: inline-block;
+                            width:10px;
+                            height: 10px;
+                            background: #11A0F8;
+                            margin-right: 5px;
+                        }
+                        .proportion:before{
+                            content:"";
+                            display: inline-block;
+                            width:12px;
+                            height: 2px;
+                            background: #4A90E2;
+                            margin-right: 5px;
+                            vertical-align:middle;
+                        }
+                        .second_line:before{
+                            content:"";
+                            display: inline-block;
+                            width:12px;
+                            height: 2px;
+                            background: #E3AF22 ;
+                            margin-right: 5px;
+                            vertical-align:middle;
+                        }
+                        .all{
+                            text-decoration:underline;
+                            color: #11A0F8;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .statistics_bottom{
+            width: 100%;
+            border: 1px solid #E9F1F3;
+            scroll-behavior: auto;
+            .el-tabs__item.is-active {
+                font-family: PingFangSC-Medium;
+                font-size: 16px;
+                color: #11A0F8;
+            }
+            .el-tabs__header{
+                margin:0 !important;
+            }
+            // .el-tabs__nav-wrap{
+            //     // height: 41px;
+            //     // padding-left: 22px;
+            // }
+            .query{
+                height: 36px;
+                padding: 16px 22px 16px 0;
+                font-size: 12px;
+                float: left;
+                .el-select{
+                    width: 120px;
+                    height: 36px;
+                    border:#F5F6FA;
+                    margin-left: 5px;
+                    .el-input__inner{
+                        height: 36px;
+                    }
+                }
+                .el-input{
+                    width: 120px !important;
+                    height: 36px !important;
+                    border:#F5F6FA;
+                    margin-left: 5px;
+                    .el-input__inner{
+                        height: 36px;
+                    }
+                }
+                span{
+                    margin-left: 22px;
+                }
+            }
+            .operation{
+                float: right;
+                height: 36px;
+                padding: 16px 22px 16px 0;
+            }
+            .el-table{
+                border-top: 1px solid #EFEFEF;
+                thead{
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+    .paging{
+        text-align: center;
+        margin-top: 15px;
+        padding-bottom: 37px;
+    }
+}

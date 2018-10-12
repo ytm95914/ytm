@@ -1,0 +1,148 @@
+.myscheduling{
+    #calendar {
+        width: 100%;
+        border: 1px solid #E9F1F3;
+        .month {
+            height: 50px;
+            background: #92A6B1;
+            div {
+                // width: 217px;
+                margin: 0 auto;
+                line-height: 50px;
+                overflow: hidden;
+                text-align: center;
+                .arrow{
+                    cursor: pointer;
+                }
+                span{
+                    color: #fff;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                }
+                .year-month {
+                    margin: 0 32px;
+                    cursor:default;
+                    .choose-year {
+                        // padding: 0 20px;
+                        font-size: 16px;
+                        font-weight: 200;
+                    }
+                    .choose-month {
+                        text-align: center;
+                        font-size: 16px;
+                        font-weight: 200;
+                    }
+                }
+            }
+
+        }
+        .weekdays {
+            margin: 0;
+            color: #FFFFFF;
+            background: #F2F7F8;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            display: flex;
+            li {
+                float: left;
+                text-align: center;
+                color: #11616f;
+                font-size: 14px;
+                font-weight: 100;
+                width: 14.28%;
+                border-right: 1px solid #fff;
+                &:last-child{
+                    border:1px solid #E9F1F3;
+                }
+            }
+        }
+
+        .days {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                float: left;
+                width: 14.28%;
+                height: 100px;
+                text-align: left;
+                font-size: 12px;
+                // color: rgb(14, 220, 235);
+                font-weight: 200;
+                outline: 0.5px solid #E9F1F3;
+                position: relative;
+                span{
+                    display: inline-block;
+                    width: 38px;
+                    height: 25px;
+                    text-align: center;
+                    line-height: 25px;
+                    color: #333;
+                }
+                p{
+                    font-size: 12px;
+                    color: #666;
+                    // display: inline-block;
+                    // width: 100%;
+                    // height: 100%;
+                    padding: 31% 14px 10px;
+                    // text-align: center;
+                    margin: 0 auto;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+                .other-month {
+                    color:#333;
+                    background: #F6F6F6;
+                }
+                .active{
+                    background: skyblue;
+                }
+                .checkbox{
+                    width: 15px;
+                    height: 15px;
+                    float: right;
+                }
+            }
+            .active{
+                background:#f2faff;
+            }
+            .other-month {
+                color: #333;
+                background: #F6F6F6;
+            }
+        }
+    }
+    .class_interval{
+        margin-top:29px;
+        padding-bottom: 37px;
+        overflow: auto;
+        li{
+            float: left;
+            margin-right: 37px;
+            line-height: 25px;
+            font-size: 12px;
+            width:45%;
+            margin-bottom: 20px;
+            span:first-child{
+                display: inline-block;
+                width: auto;
+                padding:0 10px;
+                height: 25px;
+                text-align: center;
+                color: #fff;
+                margin-right: 19px;
+            }
+            span:last-child{
+                color: #333;
+            }
+        }
+    }
+}
+
+

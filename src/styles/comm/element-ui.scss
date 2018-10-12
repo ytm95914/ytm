@@ -1,0 +1,180 @@
+ //覆盖一些element-ui样式
+
+// reset inpit , default 40px , author:Lindong on 2018.8.6
+.el-input{
+    .el-input__inner{
+         height:36px;
+         font-size: 12px;
+     }
+}
+
+
+// reset button , default 40px , author:Lindong on 2018.8.6
+.el-button{
+    height:36px;
+}
+
+//  reset dialog , 设置高度 on lindong
+.el-dialog {
+    margin-top: 5vh !important;
+    .el-dialog__header {
+        height:30px;
+        border-bottom: 1px solid #EFEFEF;
+    }
+    .el-dialog__body {
+        padding:20px 20px 30px
+    }
+}
+
+
+// reset  pagination 分页 on lindong
+.el-pagination{
+    text-align: center;
+    margin:20px auto;
+    .jumpBox{
+        display: inline-block;
+        height:22px;
+        font-size:12px;
+        vertical-align: middle;
+        input{
+            height:22px;
+            width:34px;
+            border:1px solid #a5a0a0;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .myscal{
+            background:#a5a0a0;
+            margin-left:20px;
+            color:#fff;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    }
+}
+
+
+// reset crumbs 全局面包屑 on lindong
+.crumbs{
+    padding-bottom: 26px;
+    font-size:12px;
+    :first-child{
+        color:#999999;
+        cursor:pointer;
+    }
+    :last-child{
+        color:#151515
+    }
+}
+
+// reset left nav styles on lindong
+.el-menu-item{
+    border-left:3px solid rgba(0,0,0,0);
+}
+.el-menu-item.is-active {
+    background-color: rgb(255, 255, 255) !important;
+    border-left:3px solid rgb(17, 160, 248);
+}
+.el-submenu__title,.el-menu-item {
+    &:hover{
+        background-color: #fff !important;
+    }
+}
+
+// reset nav btn on lindong
+.el-submenu__icon-arrow{
+    transform: rotateZ(270deg);
+}
+.el-submenu.is-opened>.el-submenu__title .el-submenu__icon-arrow {
+    transform: rotateZ(360deg);
+}
+// 排班按钮样式 shumei zhao
+// 按钮样式
+#button{
+    width: 70px;
+    float: right;
+    margin-left: 10px;
+    font-size: 13px;
+}
+#svg-icon{
+    width: 13px;
+    height: 13px;
+    color: #fff;
+    margin-right: 5.4px;
+    float: left;
+}
+.btn_import{
+    background: #00C4AB;
+}
+.btn_download{
+    background: #4A90E2;
+}
+.export{
+    width: 13px;
+    height: 13px;
+    color: #fff;
+}
+//liyanwen   去掉input框时间里的关闭按钮 避免清空后缺少日期最终导致数据不显示
+.el-input__suffix{
+    .el-input__suffix-inner{
+        .el-input__icon{
+            display: none;
+        }
+    }
+}
+
+// reset textare change on lindong
+ .el-form-item{
+     .el-form-item__content{
+         .el-textarea{
+             .el-textarea__inner{
+                 resize: none;
+             }
+         }
+     }
+ }
+
+
+ //表格没数据,暂无数据隐藏yanwen
+ .el-table__empty-block{
+     display: none !important;
+ }
+
+ // reset TAB切换样式重置 on lindong
+ .el-tabs__header{
+     margin:0 !important;
+ }
+
+ // tab切换 shumei Zhao
+ .el-tabs__nav-wrap{
+     height:50px !important;
+ }
+ .el-tabs__active-bar{
+     bottom:6px !important;
+ }
+ .el-tabs__nav-scroll{
+     padding-left: 20px !important;
+ }
+ .el-tabs__item.is-active{
+     font-size: 16px !important;
+ }
+
+//时间插件小图标的line-height改为36px
+ .el-input__prefix{
+     .el-input__icon{
+         line-height:36px !important;
+     }
+ }
+
+ .el-input--suffix .el-input__inner {
+     padding-right:10px !important;
+ }
+
+
+ //系统管理-用户管理下列表-提示框
+
+ .el-tag{
+     border:0px!important;
+     background:rgba(255,255,255,0)!important;
+     color:rgb(96, 98, 102)!important;
+ }
